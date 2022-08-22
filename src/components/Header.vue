@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <v-app-bar app color="white" elevate-on-scroll elevation="4">
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="$emit('drawerEvent')"></v-app-bar-nav-icon>
 
     <v-toolbar-title>Title</v-toolbar-title>
 
@@ -25,6 +25,11 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Header",
+  methods: {
+    handle() {
+      console.log("Hello");
+    },
+  },
 };
 </script>
 

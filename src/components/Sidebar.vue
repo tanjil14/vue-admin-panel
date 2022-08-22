@@ -1,8 +1,9 @@
+<!-- eslint-disable vue/no-mutating-props -->
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <v-navigation-drawer v-model="drawer" app>
     <div class="d-flex flex-column mb-6 justify-center align-center my-5">
-      <v-img src="../assets/avatar.png" class="mb-2" height="100" width="100"/>
+      <v-img src="../assets/avatar.png" class="mb-2" height="100" width="100" />
       <div>john@vuetifyjs.com</div>
     </div>
 
@@ -26,6 +27,7 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Sidebar",
+  props: ["drawer"],
   data() {
     return {
       links: [
