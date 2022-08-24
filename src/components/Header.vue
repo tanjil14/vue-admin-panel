@@ -6,7 +6,7 @@
     <v-col lg="6" cols="12">
       <v-form>
         <v-text-field
-          class="p-0 m-0 mt-6"
+          class="p-0 m-0 mt-6 mr-3"
           full-width
           dense
           append-icon="mdi-magnify"
