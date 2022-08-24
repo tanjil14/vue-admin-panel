@@ -78,6 +78,7 @@
         </v-list-item>
         <v-divider />
         <v-list-item
+          link
           v-for="(menu, i) in menus"
           :key="i"
           router
